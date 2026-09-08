@@ -1,0 +1,33 @@
+body {
+    font-family: "Patrick Hand", cursive;
+    margin: 0;
+    padding: 0;
+}
+#cim{
+    background-color: #876CFF;
+}
+header{
+    background-color: #4623E4;
+    
+    
+}
+nav{
+    padding: 5px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+#h_nev{
+    font-size: 160%;
+}
+#h_fejl{
+    font-size: 100%;
+    margin-left: 50px;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style-type: none;
+}
