@@ -2,14 +2,23 @@ body {
     font-family: "Patrick Hand", cursive;
     margin: 0;
     padding: 0;
+    background-color: #020845;
+    color: white
 }
 #cim{
     background-color: #876CFF;
+    padding: 10px;
 }
 header{
     background-color: #4623E4;
+    color: black;
+    max-width: 1200px;
+    margin-inline: auto;
     
-    
+}
+main{
+    max-width: 1200px;
+    margin-inline: auto;
 }
 nav{
     padding: 5px;
@@ -30,4 +39,131 @@ nav ul{
     flex-direction: row;
     gap: 20px;
     list-style-type: none;
+}
+
+nav li{
+    transition: transform .1s ease-in-out ;
+    
+}
+
+nav li:hover{
+    transform: scale(1.3);
+}
+
+
+
+#bemutatkozas{
+    display: flex;
+    flex-direction: row;
+}
+#bemutatkozas .szoveg{
+    width: 60%;
+}
+section{
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+img{
+    max-width: 100%;
+}
+
+#nyelvek {
+    position: relative;
+    max-width: 99vw;
+    max-height: 99vh;
+}
+#nyelvek img{
+    position: absolute;
+    max-width: 25vw;
+    max-height: 25vh;
+    left: 50%;
+    top: 25vh;
+    transform: translate(-50%, 0) rotate(90deg);
+                     /*sugár    w   h eltolás*/
+    offset-path: circle(75% at 50% 40vh);
+    
+    
+}
+#C\#_logo  { animation: korozes 60s infinite -40s linear;}
+#CSS_logo  { animation: korozes 60s infinite -30s linear; }
+#HTML_logo { animation: korozes 60s infinite -20s linear; }
+#JS_logo   { animation: korozes 60s infinite -10s linear; }
+#PY_logo   { animation: korozes 60s infinite 0s linear; }
+
+#github_logo{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+#logok{
+    max-width: 80vw;
+    max-height: 80vh;
+    position: relative;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+@keyframes korozes {
+    0% {
+        offset-distance: 0%;
+        transform: rotate(-90deg);
+    }
+    100% {
+        offset-distance: 100%;
+        transform: rotate(-450deg);
+    }
+}
+
+
+.projekt{
+    background-color: #876CFF;
+    width: 30%;
+    border-radius: 5%;
+    color: black;
+    padding: 10px;
+    border: 2px solid white;
+}
+
+.projekt img{
+    width: 30%;
+    margin: 0 auto;
+    transform: translate(-50%, 0);
+    margin-left: 50%;
+    border-radius: 15%;
+}
+
+#projektek{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5%;
+}
+#sneakers_logo{
+    width: 30%;
+    margin-inline: auto;
+    margin-top: 18px;
+    transform: none;
+}
+main h2{
+    margin-left: 10px;
+}
+
+#kapcsolat a{
+    color: white;
+}
+footer h4{
+    margin: 0;
+}
+footer{
+    padding: 3px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    background-color: #876CFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
