@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth; /* szép görgetés a navból */
+}
 body {
     font-family: "Patrick Hand", cursive;
     margin: 0;
@@ -42,15 +45,12 @@ nav ul{
 }
 
 nav li{
-    transition: transform .1s ease-in-out ;
-    
+    transition: transform .2s ease-in-out ;
 }
 
 nav li:hover{
     transform: scale(1.3);
 }
-
-
 
 #bemutatkozas{
     display: flex;
@@ -58,6 +58,12 @@ nav li:hover{
 }
 #bemutatkozas .szoveg{
     width: 60%;
+}
+#bemutatkozas img{
+    margin: 4%;
+    height: 30vh;
+    border-radius: 5%;
+    border: 2px solid white;
 }
 section{
     padding: 20px;
@@ -126,6 +132,7 @@ img{
     color: black;
     padding: 10px;
     border: 2px solid white;
+    box-shadow: 0 10px 10px rgb(255, 255, 255);
 }
 
 .projekt img{
