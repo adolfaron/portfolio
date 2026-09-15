@@ -16,8 +16,7 @@ header{
     background-color: #4623E4;
     color: black;
     max-width: 1200px;
-    margin-inline: auto;
-    
+    margin-inline: auto;    
 }
 main{
     max-width: 1200px;
@@ -58,12 +57,16 @@ nav li:hover{
 }
 #bemutatkozas .szoveg{
     width: 60%;
+    margin-top: 15px;
 }
 #bemutatkozas img{
     margin: 4%;
     height: 30vh;
     border-radius: 5%;
     border: 2px solid white;
+    box-shadow: 0 0px 15px rgb(255, 255, 255);
+    object-fit: cover;
+    
 }
 section{
     padding: 20px;
@@ -84,7 +87,7 @@ img{
     max-width: 25vw;
     max-height: 25vh;
     left: 50%;
-    top: 25vh;
+    
     transform: translate(-50%, 0) rotate(90deg);
                      /*sugár    w   h eltolás*/
     offset-path: circle(75% at 50% 40vh);
@@ -132,7 +135,7 @@ img{
     color: black;
     padding: 10px;
     border: 2px solid white;
-    box-shadow: 0 10px 10px rgb(255, 255, 255);
+    box-shadow: 0 0px 15px rgb(255, 255, 255);
 }
 
 .projekt img{
@@ -173,4 +176,31 @@ footer{
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+@media screen and (max-width: 800px){
+    nav ul{
+        flex-direction: column;   
+    }
+
+    #bemutatkozas{
+        flex-direction: column;
+    }
+    #projektek{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    #bemutatkozas .szoveg{
+        width: 60%;
+    }
+    #bemutatkozas img {
+        width: 80%;
+        height: auto;
+        margin: 20px auto;
+        margin-inline: auto;
+    }
+    .projekt{
+        width: 60%;
+    }
 }
